@@ -2,15 +2,28 @@ body{
     margin: 0;
     padding: 0;
 }
+
+table{
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+    border: 1px solid lightblue;
+}
+
 nav{
     height: 50px;
     background-color: lightgreen;
     line-height: 30px;
     font-size: 20px;
+    /* position: relative; */
+}
+nav > ul > li{
+    float: left;
+    
 }
 nav li{
     list-style: none;
-    float: left;
     padding: 10px;
 }
 nav li:hover{
@@ -20,10 +33,15 @@ nav a{
     text-decoration: none;
     color:maroon;
 }
-table{
-    border-collapse: collapse;
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    padding: 0;
+    /* top:100%; */
 }
-td,th{
-    padding: 10px;
-    border: 1px solid lightblue;
+nav > ul > li:hover .dropdown{
+    display: block;
+
 }
