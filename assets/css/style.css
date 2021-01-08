@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 50px;
+    background-color: lightgreen;
+    line-height: 30px;
+    font-size: 20px;
+}
+nav li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+nav li:hover{
+    background-color: mediumseagreen;
+}
+nav a{
+    text-decoration: none;
+    color:maroon;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+    border: 1px solid lightblue;
+}
